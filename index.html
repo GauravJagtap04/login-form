@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abc.css">
+    <link rel="shortcut icon" href="icons/idcardicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Montserrat:wght@300&family=Nunito:wght@300&family=Open+Sans&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Sign Up/Login Page</title>
+    <script type="text/javascript">
+        function bgblack(){
+            var idleft = document.getElementById("idleft");
+            var idright = document.getElementById("idright");
+            var left_h1 = document.getElementById("left-h1");
+            var right_h1 = document.getElementById("right-h1");
+
+            var sign_up_container = document.getElementById("sign-up-container");
+            var sign_up_form = document.getElementById("sign-up-form");
+            var sign_down_arrow = document.getElementById("sign-down-arrow");
+            var sign_clickhere = document.getElementById("sign-down-click-h6");
+
+            idleft.style.width = "100%";
+            idright.style.width = "0";
+            idleft.style.overflow = "hidden";
+            idright.style.overflow = "hidden";
+            left_h1.style.right = "45vh";
+            idleft.style.transition = "all 1s";
+            idright.style.transition = "all 1s";
+            left_h1.style.transition = "all 1s";
+
+            sign_down_arrow.style.display = "block";
+            sign_down_arrow.style.right = "49%";
+            sign_clickhere.style.display = "block";
+            sign_clickhere.style.right = "47%";
+        }
+        function bgwhite(){
+            var idleft = document.getElementById("idleft");
+            var idright = document.getElementById("idright");
+            var left_h1 = document.getElementById("left-h1");
+            var right_h1 = document.getElementById("right-h1");
+
+            var login_container = document.getElementById("login-container");
+            var login_form = document.getElementById("login-form");
+            var login_down_arrow = document.getElementById("login-down-arrow");
+            var login_clickhere = document.getElementById("login-down-click-h6");
+            var login_click = document.getElementById("login-click");
+
+            idright.style.width = "100%";
+            idleft.style.width = "0";
+            idleft.style.overflow = "hidden";
+            idright.style.overflow = "hidden";
+            right_h1.style.right = "30vh";
+            idright.style.transition = "all 1s";
+            idleft.style.transition = "all 1s";
+            right_h1.style.transition = "all 1s";
+
+            login_down_arrow.style.display = "block";
+            login_down_arrow.style.right = "49%";
+            login_clickhere.style.display = "block";
+            login_clickhere.style.right = "47%";
+        }
+        function backtonormal(){
+            var idleft = document.getElementById("idleft");
+            var idright = document.getElementById("idright");
+            var left_h1 = document.getElementById("left-h1");
+            var right_h1 = document.getElementById("right-h1");
+
+            var sign_up_container = document.getElementById("sign-up-container");
+            var sign_up_form = document.getElementById("sign-up-form");
+            var sign_down_arrow = document.getElementById("sign-down-arrow");
+            var sign_clickhere = document.getElementById("sign-down-click-h6");
+
+            var login_container = document.getElementById("login-container");
+            var login_form = document.getElementById("login-form");
+            var login_down_arrow = document.getElementById("login-down-arrow");
+            var login_clickhere = document.getElementById("login-down-click-h6");
+
+            left_h1.style.right = "20%";
+            right_h1.style.right = "initial";
+            idleft.style.transition = "all 1s";
+            idright.style.transition = "all 1s";
+            left_h1.style.transition = "all 1s";
+            right_h1.style.transition = "all 1s";
+            left_h1.style.top = "35vh";
+
+            sign_up_form.style.top = "100vh";
+            sign_up_form.style.right = "13vh";
+            sign_up_container.style.display = "none";
+
+
+            login_form.style.top = "100vh";
+            login_form.style.right = "13vh";
+            login_container.style.display = "none";            
+        }
+        function openForm(){
+            var idleft = document.getElementById("idleft");
+            var idright = document.getElementById("idright");
+            var left_h1 = document.getElementById("left-h1");
+            var right_h1 = document.getElementById("right-h1");
+
+            var sign_up_container = document.getElementById("sign-up-container");
+            var sign_up_form = document.getElementById("sign-up-form");
+            var sign_click = document.getElementById("sign-click");
+            var sign_down_arrow = document.getElementById("sign-down-arrow");
+            var sign_clickhere = document.getElementById("sign-down-click-h6");
+
+            left_h1.style.top = "5vh";
+
+            sign_up_container.style.display = "block";
+            sign_up_form.style.top = "30vh";
+            sign_up_form.style.right = "20vh";
+            sign_down_arrow.style.display = "none";
+            sign_clickhere.style.display = "none";
+        }
+        function openFormLogin(){
+            var right_h1 = document.getElementById("right-h1");
+
+            var login_container = document.getElementById("login-container");
+            var login_form = document.getElementById("login-form");
+            var login_click = document.getElementById("login-click");
+            var login_down_arrow = document.getElementById("login-down-arrow");
+            var login_clickhere = document.getElementById("login-down-click-h6");
+
+            right_h1.style.top = "5vh";
+
+            login_container.style.display = "block";
+            login_form.style.top = "30vh";
+            login_form.style.right = "20vh";
+            login_clickhere.style.display = "none";
+            login_down_arrow.style.display = "none";
+            login_click.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="page">
+        <div class="left-side" id="idleft">
+            <h1 onmouseover="bgblack()" onmouseleave="backtonormal()" id="left-h1">Sign Up</h1>
+            <div class="sign-click" onclick="openForm()" id="sign-click">
+                <h6 id="sign-down-click-h6">Click here</h6>
+                <img src="icons/down-arrow.png" alt="scroll icon" id="sign-down-arrow">
+            </div>
+            <div class="container-sign" id="sign-up-container">
+                <form action="form.php" method="post" id="sign-up-form">
+                    <div class="form-row">
+                       <div class="input-data" id="sign-ip">
+                            <input type="text" name="fname" required>
+                            <label for="fname">First Name</label> 
+                        </div>
+                        <div class="input-data" id="sign-ip">
+                            <input type="text" name="lname" required>
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data" id="sign-ip">
+                            <input type="text" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-data" id="sign-ip">
+                            <input type="tel" name="cont" required>
+                            <label for="cont">Contact No.</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data" id="sign-ip">
+                            <input type="password" name="crt-psw" required>
+                            <label for="crt-psw">Create Password</label>
+                        </div>
+                        <div class="input-data" id="sign-ip">
+                            <input type="password" name="conf-psw" required>
+                            <label for="conf-psw">Confirm Password</label>
+                        </div>
+                    </div>
+                    <div class="sign-footer">
+                        <div class="sign-footer-row">
+                            <button type="submit" value="Submit" class="submit-btn">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>SUBMIT</span>
+                            </button>
+                            <button type="reset" value="Reset" class="reset-btn" onclick="if(confirm('Are you sure you wish to cancel?')) history.go(0);">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>CANCEL</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right-side" id="idright">
+            <h1 onmouseover="bgwhite()" onmouseleave="backtonormal()" id="right-h1">Login</h1>
+            <div class="login-click" onclick="openFormLogin()" id="login-click">
+                <h6 id="login-down-click-h6">Click here</h6>
+                <img src="icons/down-arrow.png" alt="scroll icon" id="login-down-arrow">
+            </div>
+            <div class="container-login" id="login-container">
+                <form action="loginform.php" id="loginform">
+                    <div class="login-form-row">
+                        <div class="login-input-data" id="login-ip">
+                            <input type="text" name="email" required>
+                            <label for="email">Email Address</label> 
+                        </div>
+                        <div class="login-input-data" id="login-ip">
+                            <input type="text" name="psw" required>
+                            <label for="psw">Password</label>
+                        </div>
+                    </div>
+                    <div class="login-forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="login-footer">
+                        <div class="login-footer-row">
+                            <button type="submit" value="Submit" class="submit-btn">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>LOGIN</span>
+                            </button>
+                            <button type="reset" value="Reset" class="reset-btn" onclick="if(confirm('Are you sure you wish to cancel?')) history.go(0);">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span>CANCEL</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+    document.getElementById("right-h1").style.display = "none";
+    document.getElementById("idright").style.background = "black";
+    document.getElementById("idright").style.transition = "all .7s ease-in-out";
+    document.getElementById("idleft").style.transition = "all .7s ease-in-out";
+
+    RESET BUTTON:
+    <button type="reset" value="Reset" class="reset-btn" onclick="if(confirm('Are you sure you wish to cancel?')) window.scrollTo(0, 0)">Cancel</button>
+-->
